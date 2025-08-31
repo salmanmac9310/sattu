@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Sattu – India’s Most Energetic & Healthy Drink</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){ emailjs.init("IiUTl4ywJDLZ_Yqsq"); })();
+</script>
+
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loader" class="loader">
+    <img src="./images/logo2.png" alt="Royal Sattu Logo" class="loader-logo">
+  </div> 
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+
+  <!-- Particle Background -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar glass">
+    <div class="nav-left">
+      <video src="./images/video2.mp4" autoplay loop muted disablepictureinpicture   class="logo"></video>
+      <span class="brand-name">Royal Sattu</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#products" class="nav-link">Products</a></li>
+      <li><a href="#brands" class="nav-link">Brands</a></li>
+      <li><a href="#features" class="nav-link">Features</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><button class="buy-btn nav-buy-btn">Buy Now</button></li>
+      <li>
+        <button class="cart-btn" id="cartBtn">
+          <img src="./images/shopping-cart.png" alt="Cart" class="cart-icon">
+          <span id="cartCount">0</span>
+        </button>
+      </li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">&#9776;</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero glass" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">India’s Most Energetic & Healthy Drink</h1>
+      <p class="hero-desc">Experience the royal taste of health and energy. 100% Organic, Delicious, and Refreshing – for every generation.</p>
+      <button class="buy-btn hero-buy-btn">Buy Now</button>
+    </div>
+    <div class="hero-image">
+      <video src="./images/videoroyal.mp4" autoplay loop muted disablepictureinpicture  class="drink-img"></video>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section" id="products">
+    <h2 class="section-title">Our Products</h2>
+    <div class="products-grid">
+      <div class="product-card glass">
+        <img src="./images/drink3.jpeg" alt="Sattu Pouch">
+        <h3>Classic Sattu Masala</h3>
+        <p>Perfect for on-the-go energy. 500ml pure Royal Sattu.</p>
+        <span class="price">₹59</span>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="product-card glass">
+        <img src="./images/drink4.jpeg" alt="Sattu Bottle">
+        <h3>Onion Sattu</h3>
+        <p>Ready-to-drink Sattu. Stay hydrated and energetic.</p>
+        <span class="price">₹69</span>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="product-card glass">
+        <img src="./images/drink2.jpeg" alt="Sattu Jar">
+        <h3>Mint Sattu</h3>
+        <p>350ml jar for the whole family. Freshness sealed.</p>
+        <span class="price">₹59</span>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands & Testimonials Section -->
+  <section class="brands-section" id="brands">
+    <h2 class="section-title">Trusted By Leading Brands</h2>
+    <div class="brands-logos">
+      <div class="logos-track">
+        <img src="./images/brand1.png" alt="Brand 1">
+        <img src="./images/brand2.png" alt="Brand 2">
+        <img src="./images/brand3.png" alt="Brand 3">
+        <img src="./images/brand4.png" alt="Brand 4">
+        <img src="./images/brand5.png" alt="Brand 5">
+        <!-- Repeat for infinite loop -->
+        <img src="./images/brand1.png" alt="Brand 1">
+        <img src="./images/brand2.png" alt="Brand 2">
+        <img src="./images/brand3.png" alt="Brand 3">
+        <img src="./images/brand4.png" alt="Brand 4">
+        <img src="./images/brand5.png" alt="Brand 5">
+      </div>
+    </div>
+    <h2 class="section-title">Customer Testimonials</h2>
+    <div class="testimonials-carousel">
+      <div class="testimonial-card glass">
+        <img src="./images/user1.jpg" alt="Customer 1" class="testimonial-photo">
+        <p class="testimonial-text">“Royal Sattu is my daily dose of energy. Tastes amazing and keeps me fit!”</p>
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-name">Amit Sharma</div>
+      </div>
+      <div class="testimonial-card glass">
+        <img src="./images/user2.jpg" alt="Customer 2" class="testimonial-photo">
+        <p class="testimonial-text">“My kids love it! Healthy and delicious. Highly recommended.”</p>
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-name">Priya Singh</div>
+      </div>
+      <div class="testimonial-card glass">
+        <img src="./images/user3.png" alt="Customer 3" class="testimonial-photo">
+        <p class="testimonial-text">“Best sattu in the market. The packaging is premium and eco-friendly.”</p>
+        <div class="testimonial-stars">★★★★★</div>
+        <div class="testimonial-name">Rahul Verma</div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <h2 class="section-title">Why Royal Sattu?</h2>
+    <div class="features-grid">
+      <div class="feature glass">
+        <img src="./images/organic.png" alt="Organic" class="feature-icon">
+        <h3>100% Organic</h3>
+        <p>Pure, chemical-free ingredients for your health.</p>
+      </div>
+      <div class="feature glass">
+        <img src="./images/energy.png" alt="Energy Boost" class="feature-icon">
+        <h3>Energy Boost</h3>
+        <p>Instant energy for your active lifestyle.</p>
+      </div>
+      <div class="feature glass">
+        <img src="./images/digestive.png" alt="Digestive Health" class="feature-icon">
+        <h3>Digestive Health</h3>
+        <p>Rich in fiber, supports a healthy gut.</p>
+      </div>
+      <div class="feature glass">
+        <img src="./images/eco.png" alt="Eco-Friendly" class="feature-icon">
+        <h3>Eco-Friendly</h3>
+        <p>Packaging that cares for the planet.</p>
+      </div>
+    </div>
+    <div class="cta-banner glass">
+      
+      <h2>Join the Royal Sattu Family</h2>
+      <a href="https://chat.whatsapp.com/FqL3ja3JV4iGz449Enywdt">
+        <button class="buy-btn cta-buy-btn">Buy Now</button>
+      </a>
+      
+    </div>
+  </section>
+
+  <!-- Contact Section (Footer Quick Link) -->
+  <section class="contact-section" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form glass">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="buy-btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Add this to your footer or as a new section above the footer -->
+<!-- filepath: c:\Users\user\Desktop\VS CODE\self practice\royal-sattu\index.html -->
+<section class="google-doc-section">
+  <h2>Live Share your experience!</h2>
+  <div class="doc-container" id="docContainer">
+    <iframe
+      id="googleDocFrame"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfkx1oVbi6xNhzJbpedf3AJqial1TEeHxukOJmlvElSkn3eqA/viewform?usp=header"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </div>
+  <div class="doc-controls">
+    <button onclick="reloadDoc()">Reload</button>
+    <button onclick="toggleDoc()" id="toggleBtn">Hide</button>
+    <button onclick="openDoc()">Open in New Tab</button>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer glass">
+    <div class="footer-main">
+      <div class="footer-logo">
+        <img src="./images/logo2.png" alt="Royal Sattu Logo">
+        <span>Royal Sattu</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://www.threads.com/@salmanmac93?xmt=AQF0fTvkdwDGE8GZxUMKSs_Z5k2OJh2MJiQZYg2sQkv-TtA"><img src="./images/threads.png" alt="thread"></a>
+        <a href="https://www.instagram.com/salmanmac93/"><img src="./images/instagram.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/salman-mac-1b040b361/"><img src="./images/linkedin.png" alt="linkedin"></a>
+      </div>
+    <form class="feedback-form" id="feedbackForm">
+    <input type="email" id="feedbackEmail" placeholder="Your Email" required>
+    <textarea id="feedbackMsg" placeholder="Your Feedback" required></textarea>
+    <button type="submit" class="buy-btn feedback-btn">Send Feedback</button>
+    <div id="feedbackStatus" class="feedback-status"></div>
+  </form>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Royal Sattu 2025. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Modal for Buy Now -->
+  <div id="modal" class="modal">
+    <div class="modal-content glass">
+      <span class="close-modal">&times;</span>
+      <h2>Checkout</h2>
+      <p>Thank you for choosing Royal Sattu!<br>
+      (This is a demo checkout popup.)</p>
+      <button class="buy-btn close-modal-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content glass cart-modal-content">
+      <span class="close-modal" id="closeCart">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <div class="cart-summary">
+        <span>Total Items: <span id="cartTotalItems">0</span></span>
+        <span>Total: ₹<span id="cartTotalPrice">0</span></span>
+      </div>
+      <button class="buy-btn" id="checkoutBtn">Checkout</button>
+    </div>
+  </div>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
